@@ -1,9 +1,14 @@
 package com.meuprojeto.todolist.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.Pattern;
 import com.meuprojeto.todolist.enums.Status;
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Objects;
 
 @Entity
 @Table(name = "tarefa")
@@ -13,6 +18,10 @@ public class Tarefa {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotBlank(message = "Título é obrigatório")
+    @Size(max = 100, message = "Título deve ter no máximo 100 caracteres")
+    @Pattern(regexp = "^(?=.*[a-zA-ZÀ-ÿ])(\\w+\\s+\\w+).*$", 
+             message = "Título deve ter pelo menos duas palavras e conter pelo menos uma letra")
     @Column(nullable = false)
     private String titulo;
     
@@ -28,7 +37,11 @@ public class Tarefa {
     @Column(name = "data_atualizacao")
     private LocalDateTime dataAtualizacao;
 
+    @Column(name = "data_conclusao")
+    private LocalDateTime dataConclusao;
+
     @OneToMany(mappedBy = "tarefa", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JsonIgnore
     private List<HistoricoTarefa> historicos;
 
     @PrePersist
@@ -100,6 +113,14 @@ public class Tarefa {
         this.dataAtualizacao = dataAtualizacao;
     }
 
+    public LocalDateTime getDataConclusao() {
+        return dataConclusao;
+    }
+
+    public void setDataConclusao(LocalDateTime dataConclusao) {
+        this.dataConclusao = dataConclusao;
+    }
+
     public List<HistoricoTarefa> getHistoricos() {
         return historicos;
     }
@@ -107,4 +128,20 @@ public class Tarefa {
     public void setHistoricos(List<HistoricoTarefa> historicos) {
         this.historicos = historicos;
     }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Tarefa)) return false;
+        Tarefa tarefa = (Tarefa) o;
+        return id != null && id.equals(tarefa.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(id);
+    }
+
+
 }

@@ -11,7 +11,8 @@ import java.util.List;
 @Repository
 public interface HistoricoTarefaRepository extends JpaRepository<HistoricoTarefa, Long> {
     
-    List<HistoricoTarefa> findByTarefaIdOrderByDataAlteracaoDesc(Long tarefaId);
+    @Query("SELECT h FROM HistoricoTarefa h WHERE h.tarefa.id = :tarefaId ORDER BY h.dataAlteracao DESC")
+    List<HistoricoTarefa> findByTarefaIdOrderByDataAlteracaoDesc(@Param("tarefaId") Long tarefaId);
     
     @Query("SELECT h FROM HistoricoTarefa h WHERE h.tarefa.id = :tarefaId ORDER BY h.dataAlteracao DESC")
     List<HistoricoTarefa> findHistoricoByTarefaId(@Param("tarefaId") Long tarefaId);

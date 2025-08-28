@@ -1,0 +1,566 @@
+2025-08-28T09:55:59.374-03:00  WARN 20020 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8h55m50s925ms422µs100ns).
+2025-08-28T10:22:55.025-03:00  INFO 10876 --- [main] c.m.todolist.TodolistApplication         : Starting TodolistApplication using Java 21.0.8 with PID 10876 (C:\Users\KaylaineSantos\projetos\todolist\todolist\target\classes started by KaylaineSantos in C:\Users\KaylaineSantos\projetos\todolist\todolist)
+2025-08-28T10:22:55.025-03:00  INFO 10876 --- [main] c.m.todolist.TodolistApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-28T10:22:57.358-03:00  INFO 10876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T10:22:57.508-03:00  INFO 10876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 2 JPA repository interfaces.
+2025-08-28T10:22:58.736-03:00  INFO 10876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2025-08-28T10:22:58.784-03:00  INFO 10876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-28T10:22:58.785-03:00  INFO 10876 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-28T10:22:58.945-03:00  INFO 10876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-28T10:22:58.947-03:00  INFO 10876 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3807 ms
+2025-08-28T10:22:59.344-03:00  INFO 10876 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T10:22:59.478-03:00  INFO 10876 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-28T10:22:59.563-03:00  INFO 10876 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-28T10:23:00.350-03:00  INFO 10876 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T10:23:00.423-03:00  INFO 10876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-28T10:23:00.799-03:00  INFO 10876 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e5b33e5
+2025-08-28T10:23:00.811-03:00  INFO 10876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-28T10:23:00.900-03:00  WARN 10876 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-28T10:23:00.945-03:00  INFO 10876 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-28T10:23:02.777-03:00  INFO 10876 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T10:23:02.890-03:00  INFO 10876 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T10:23:03.447-03:00  INFO 10876 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-28T10:23:05.188-03:00  WARN 10876 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-28T10:23:06.129-03:00  INFO 10876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path '/'
+2025-08-28T10:23:06.151-03:00  INFO 10876 --- [main] c.m.todolist.TodolistApplication         : Started TodolistApplication in 12.093 seconds (process running for 12.761)
+2025-08-28T10:23:30.846-03:00  INFO 10876 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-28T10:23:30.872-03:00  INFO 10876 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-28T10:23:30.879-03:00  INFO 10876 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T10:23:30.883-03:00  INFO 10876 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-28T10:23:30.894-03:00  INFO 10876 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-28T10:33:36.915-03:00  INFO 31892 --- [main] c.m.todolist.TodolistApplication         : Starting TodolistApplication using Java 21.0.8 with PID 31892 (C:\Users\KaylaineSantos\projetos\todolist\todolist\target\classes started by KaylaineSantos in C:\Users\KaylaineSantos\projetos\todolist\todolist)
+2025-08-28T10:33:36.915-03:00  INFO 31892 --- [main] c.m.todolist.TodolistApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-28T10:33:38.593-03:00  INFO 31892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T10:33:38.693-03:00  INFO 31892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84 ms. Found 2 JPA repository interfaces.
+2025-08-28T10:33:39.857-03:00  INFO 31892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-08-28T10:33:39.889-03:00  INFO 31892 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-28T10:33:39.889-03:00  INFO 31892 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-28T10:33:40.015-03:00  INFO 31892 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-28T10:33:40.015-03:00  INFO 31892 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3023 ms
+2025-08-28T10:33:40.437-03:00  INFO 31892 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T10:33:40.658-03:00  INFO 31892 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-28T10:33:40.735-03:00  INFO 31892 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-28T10:33:41.380-03:00  INFO 31892 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T10:33:41.497-03:00  INFO 31892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-28T10:33:41.895-03:00  INFO 31892 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@734cf881
+2025-08-28T10:33:41.915-03:00  INFO 31892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-28T10:33:42.067-03:00  INFO 31892 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-28T10:33:43.576-03:00  INFO 31892 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T10:33:43.683-03:00  INFO 31892 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T10:33:44.264-03:00  INFO 31892 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-28T10:33:46.701-03:00  INFO 31892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-08-28T10:33:46.714-03:00  INFO 31892 --- [main] c.m.todolist.TodolistApplication         : Started TodolistApplication in 10.552 seconds (process running for 11.141)
+2025-08-28T10:34:05.838-03:00  INFO 31892 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-28T10:34:05.857-03:00  INFO 31892 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-28T10:34:05.863-03:00  INFO 31892 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T10:34:05.863-03:00  INFO 31892 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-28T10:34:05.875-03:00  INFO 31892 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-28T10:40:11.531-03:00  INFO 7296 --- [main] c.m.todolist.TodolistApplication         : Starting TodolistApplication using Java 21.0.8 with PID 7296 (C:\Users\KaylaineSantos\projetos\todolist\todolist\target\classes started by KaylaineSantos in C:\Users\KaylaineSantos\projetos\todolist\todolist)
+2025-08-28T10:40:11.533-03:00  INFO 7296 --- [main] c.m.todolist.TodolistApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-28T10:40:12.566-03:00  INFO 7296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T10:40:12.653-03:00  INFO 7296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 2 JPA repository interfaces.
+2025-08-28T10:40:13.281-03:00  INFO 7296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-08-28T10:40:13.302-03:00  INFO 7296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-28T10:40:13.303-03:00  INFO 7296 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-28T10:40:13.371-03:00  INFO 7296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-28T10:40:13.371-03:00  INFO 7296 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1764 ms
+2025-08-28T10:40:13.552-03:00  INFO 7296 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T10:40:13.625-03:00  INFO 7296 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-28T10:40:13.657-03:00  INFO 7296 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-28T10:40:13.948-03:00  INFO 7296 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T10:40:13.989-03:00  INFO 7296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-28T10:40:14.160-03:00  INFO 7296 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ffa7041
+2025-08-28T10:40:14.162-03:00  INFO 7296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-28T10:40:14.252-03:00  INFO 7296 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-28T10:40:15.317-03:00  INFO 7296 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T10:40:15.424-03:00  INFO 7296 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T10:40:15.703-03:00  INFO 7296 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-28T10:40:16.739-03:00  INFO 7296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-08-28T10:40:16.747-03:00  INFO 7296 --- [main] c.m.todolist.TodolistApplication         : Started TodolistApplication in 5.88 seconds (process running for 6.326)
+2025-08-28T10:40:24.396-03:00  INFO 7296 --- [http-nio-8083-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28T10:40:24.396-03:00  INFO 7296 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-28T10:40:24.396-03:00  INFO 7296 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-08-28T10:40:24.418-03:00  WARN 7296 --- [http-nio-8083-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-08-28T10:45:13.386-03:00  WARN 7296 --- [http-nio-8083-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-08-28T10:45:13.387-03:00  WARN 7296 --- [http-nio-8083-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-08-28T10:47:07.658-03:00  WARN 7296 --- [http-nio-8083-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Could not initialize proxy [com.meuprojeto.todolist.entity.Tarefa#19] - no session]
+2025-08-28T10:47:19.559-03:00  WARN 7296 --- [http-nio-8083-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Could not initialize proxy [com.meuprojeto.todolist.entity.Tarefa#19] - no session]
+2025-08-28T10:47:41.968-03:00  WARN 7296 --- [http-nio-8083-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Could not initialize proxy [com.meuprojeto.todolist.entity.Tarefa#19] - no session]
+2025-08-28T10:58:12.645-03:00  INFO 7296 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-28T10:58:12.662-03:00  INFO 7296 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-28T10:58:12.665-03:00  INFO 7296 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T10:58:12.666-03:00  INFO 7296 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-28T10:58:12.674-03:00  INFO 7296 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-28T11:03:52.493-03:00  INFO 18180 --- [main] c.m.todolist.TodolistApplication         : Starting TodolistApplication using Java 21.0.8 with PID 18180 (C:\Users\KaylaineSantos\projetos\todolist\todolist\target\classes started by KaylaineSantos in C:\Users\KaylaineSantos\projetos\todolist\todolist)
+2025-08-28T11:03:52.493-03:00  INFO 18180 --- [main] c.m.todolist.TodolistApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-28T11:03:53.291-03:00  INFO 18180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T11:03:53.382-03:00  INFO 18180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+2025-08-28T11:03:53.855-03:00  INFO 18180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-08-28T11:03:53.878-03:00  INFO 18180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-28T11:03:53.878-03:00  INFO 18180 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-28T11:03:53.937-03:00  INFO 18180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-28T11:03:53.937-03:00  INFO 18180 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1382 ms
+2025-08-28T11:03:54.091-03:00  INFO 18180 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T11:03:54.140-03:00  INFO 18180 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-28T11:03:54.170-03:00  INFO 18180 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-28T11:03:54.430-03:00  INFO 18180 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T11:03:54.471-03:00  INFO 18180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-28T11:03:54.651-03:00  INFO 18180 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@16a09809
+2025-08-28T11:03:54.664-03:00  INFO 18180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-28T11:03:54.756-03:00  INFO 18180 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-28T11:03:55.813-03:00  INFO 18180 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T11:03:55.903-03:00  INFO 18180 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T11:03:56.148-03:00  INFO 18180 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-28T11:03:57.273-03:00  INFO 18180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-08-28T11:03:57.275-03:00  INFO 18180 --- [main] c.m.todolist.TodolistApplication         : Started TodolistApplication in 5.357 seconds (process running for 5.716)
+2025-08-28T11:04:03.320-03:00  INFO 18180 --- [http-nio-8083-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28T11:04:03.320-03:00  INFO 18180 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-28T11:04:03.320-03:00  INFO 18180 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-08-28T11:04:03.587-03:00  WARN 18180 --- [http-nio-8083-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: failed to lazily initialize a collection of role: com.meuprojeto.todolist.entity.Tarefa.historicos: could not initialize proxy - no Session]
+2025-08-28T11:35:50.086-03:00  INFO 18180 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-28T11:35:50.112-03:00  INFO 18180 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-28T11:35:50.118-03:00  INFO 18180 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T11:35:50.120-03:00  INFO 18180 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-28T11:35:50.127-03:00  INFO 18180 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-28T11:36:44.824-03:00  INFO 33192 --- [main] c.m.todolist.TodolistApplication         : Starting TodolistApplication using Java 21.0.8 with PID 33192 (C:\Users\KaylaineSantos\projetos\todolist\todolist\target\classes started by KaylaineSantos in C:\Users\KaylaineSantos\projetos\todolist\todolist)
+2025-08-28T11:36:44.829-03:00  INFO 33192 --- [main] c.m.todolist.TodolistApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-28T11:36:45.932-03:00  INFO 33192 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T11:36:46.014-03:00  INFO 33192 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 2 JPA repository interfaces.
+2025-08-28T11:36:47.168-03:00  INFO 33192 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-08-28T11:36:47.187-03:00  INFO 33192 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-28T11:36:47.187-03:00  INFO 33192 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-28T11:36:47.248-03:00  INFO 33192 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-28T11:36:47.248-03:00  INFO 33192 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2272 ms
+2025-08-28T11:36:47.429-03:00  INFO 33192 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T11:36:47.486-03:00  INFO 33192 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-28T11:36:47.521-03:00  INFO 33192 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-28T11:36:47.858-03:00  INFO 33192 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T11:36:47.889-03:00  INFO 33192 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-28T11:36:48.154-03:00  INFO 33192 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@16a09809
+2025-08-28T11:36:48.154-03:00  INFO 33192 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-28T11:36:48.261-03:00  INFO 33192 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-28T11:36:49.612-03:00  INFO 33192 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T11:36:49.719-03:00  INFO 33192 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T11:36:50.147-03:00  INFO 33192 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-28T11:36:51.681-03:00  INFO 33192 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-08-28T11:36:51.704-03:00  INFO 33192 --- [main] c.m.todolist.TodolistApplication         : Started TodolistApplication in 7.681 seconds (process running for 8.09)
+2025-08-28T11:37:04.329-03:00  INFO 33192 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28T11:37:04.329-03:00  INFO 33192 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-28T11:37:04.337-03:00  INFO 33192 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2025-08-28T11:41:14.180-03:00  INFO 33192 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-28T11:41:14.199-03:00  INFO 33192 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-28T11:41:14.202-03:00  INFO 33192 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T11:41:14.205-03:00  INFO 33192 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-28T11:41:14.213-03:00  INFO 33192 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-28T12:23:25.658-03:00  INFO 24180 --- [main] c.m.todolist.TodolistApplication         : Starting TodolistApplication using Java 21.0.8 with PID 24180 (C:\Users\KaylaineSantos\projetos\todolist\todolist\target\classes started by KaylaineSantos in C:\Users\KaylaineSantos\projetos\todolist\todolist)
+2025-08-28T12:23:25.658-03:00  INFO 24180 --- [main] c.m.todolist.TodolistApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-28T12:23:28.201-03:00  INFO 24180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T12:23:28.336-03:00  INFO 24180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115 ms. Found 2 JPA repository interfaces.
+2025-08-28T12:23:29.412-03:00  INFO 24180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-08-28T12:23:29.432-03:00  INFO 24180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-28T12:23:29.436-03:00  INFO 24180 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-28T12:23:29.583-03:00  INFO 24180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-28T12:23:29.583-03:00  INFO 24180 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3825 ms
+2025-08-28T12:23:29.958-03:00  INFO 24180 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T12:23:30.141-03:00  INFO 24180 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-28T12:23:30.270-03:00  INFO 24180 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-28T12:23:30.658-03:00  INFO 24180 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T12:23:30.737-03:00  INFO 24180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-28T12:23:31.005-03:00  INFO 24180 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21abda60
+2025-08-28T12:23:31.014-03:00  INFO 24180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-28T12:23:31.348-03:00  INFO 24180 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-28T12:23:33.036-03:00  INFO 24180 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T12:23:33.136-03:00  INFO 24180 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T12:23:33.527-03:00  INFO 24180 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-28T12:23:34.555-03:00  WARN 24180 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tarefaController' defined in file [C:\Users\KaylaineSantos\projetos\todolist\todolist\target\classes\com\meuprojeto\todolist\controller\TarefaController.class]: Failed to instantiate [com.meuprojeto.todolist.controller.TarefaController]: Constructor threw exception
+2025-08-28T12:23:34.555-03:00  INFO 24180 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T12:23:34.559-03:00  INFO 24180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-28T12:23:34.571-03:00  INFO 24180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-28T12:23:34.573-03:00  INFO 24180 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-28T12:23:34.587-03:00  INFO 24180 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-28T12:23:34.607-03:00 ERROR 24180 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tarefaController' defined in file [C:\Users\KaylaineSantos\projetos\todolist\todolist\target\classes\com\meuprojeto\todolist\controller\TarefaController.class]: Failed to instantiate [com.meuprojeto.todolist.controller.TarefaController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1357) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.4.jar:3.5.4]
+	at com.meuprojeto.todolist.TodolistApplication.main(TodolistApplication.java:9) ~[classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.meuprojeto.todolist.controller.TarefaController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:123) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351) ~[spring-beans-6.2.9.jar:6.2.9]
+	... 19 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The annotation @Parameter is disallowed for this location
+	The annotation @PathVariable is disallowed for this location
+	Duplicate local variable id
+	Syntax error on token ")", ; expected
+	Duplicate local variable historico
+	Syntax error, insert "}" to complete ClassBody
+
+	at com.meuprojeto.todolist.controller.TarefaController.<init>(TarefaController.java:152) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197) ~[spring-beans-6.2.9.jar:6.2.9]
+	... 21 common frames omitted
+
+2025-08-28T13:05:31.537-03:00  INFO 33548 --- [main] c.m.todolist.TodolistApplication         : Starting TodolistApplication using Java 21.0.8 with PID 33548 (C:\Users\KaylaineSantos\projetos\todolist\todolist\target\classes started by KaylaineSantos in C:\Users\KaylaineSantos\projetos\todolist\todolist)
+2025-08-28T13:05:31.540-03:00  INFO 33548 --- [main] c.m.todolist.TodolistApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-28T13:05:32.489-03:00  INFO 33548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T13:05:32.586-03:00  INFO 33548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
+2025-08-28T13:05:33.416-03:00  INFO 33548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-08-28T13:05:33.472-03:00  INFO 33548 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-28T13:05:33.486-03:00  INFO 33548 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-28T13:05:33.673-03:00  INFO 33548 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-28T13:05:33.673-03:00  INFO 33548 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2067 ms
+2025-08-28T13:05:33.969-03:00  INFO 33548 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T13:05:34.031-03:00  INFO 33548 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-28T13:05:34.055-03:00  INFO 33548 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-28T13:05:34.416-03:00  INFO 33548 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T13:05:34.495-03:00  INFO 33548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-28T13:05:34.841-03:00  INFO 33548 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d37aa0f
+2025-08-28T13:05:34.841-03:00  INFO 33548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-28T13:05:35.006-03:00  INFO 33548 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-28T13:05:36.172-03:00  INFO 33548 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T13:05:36.286-03:00  INFO 33548 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T13:05:36.586-03:00  INFO 33548 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-28T13:05:37.175-03:00  WARN 33548 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tarefaController' defined in file [C:\Users\KaylaineSantos\projetos\todolist\todolist\target\classes\com\meuprojeto\todolist\controller\TarefaController.class]: Failed to instantiate [com.meuprojeto.todolist.controller.TarefaController]: Constructor threw exception
+2025-08-28T13:05:37.175-03:00  INFO 33548 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T13:05:37.178-03:00  INFO 33548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-28T13:05:37.187-03:00  INFO 33548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-28T13:05:37.189-03:00  INFO 33548 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-28T13:05:37.203-03:00  INFO 33548 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-28T13:05:37.224-03:00 ERROR 33548 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tarefaController' defined in file [C:\Users\KaylaineSantos\projetos\todolist\todolist\target\classes\com\meuprojeto\todolist\controller\TarefaController.class]: Failed to instantiate [com.meuprojeto.todolist.controller.TarefaController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1357) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.4.jar:3.5.4]
+	at com.meuprojeto.todolist.TodolistApplication.main(TodolistApplication.java:9) ~[classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.meuprojeto.todolist.controller.TarefaController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:123) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351) ~[spring-beans-6.2.9.jar:6.2.9]
+	... 19 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The annotation @Parameter is disallowed for this location
+	The annotation @PathVariable is disallowed for this location
+	Duplicate local variable id
+	Syntax error on token ")", ; expected
+	Duplicate local variable historico
+	Syntax error, insert "}" to complete ClassBody
+
+	at com.meuprojeto.todolist.controller.TarefaController.<init>(TarefaController.java:152) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197) ~[spring-beans-6.2.9.jar:6.2.9]
+	... 21 common frames omitted
+
+2025-08-28T13:48:51.512-03:00  INFO 31296 --- [main] c.m.todolist.TodolistApplication         : Starting TodolistApplication using Java 21.0.8 with PID 31296 (C:\Users\KaylaineSantos\projetos\todolist\todolist\target\classes started by KaylaineSantos in C:\Users\KaylaineSantos\projetos\todolist\todolist)
+2025-08-28T13:48:51.518-03:00  INFO 31296 --- [main] c.m.todolist.TodolistApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-28T13:48:52.714-03:00  INFO 31296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T13:48:52.943-03:00  INFO 31296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 180 ms. Found 2 JPA repository interfaces.
+2025-08-28T13:48:53.508-03:00  INFO 31296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-08-28T13:48:53.532-03:00  INFO 31296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-28T13:48:53.532-03:00  INFO 31296 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-28T13:48:53.595-03:00  INFO 31296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-28T13:48:53.595-03:00  INFO 31296 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1997 ms
+2025-08-28T13:48:53.941-03:00  INFO 31296 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T13:48:54.056-03:00  INFO 31296 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-28T13:48:54.096-03:00  INFO 31296 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-28T13:48:54.506-03:00  INFO 31296 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T13:48:54.613-03:00  INFO 31296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-28T13:48:55.036-03:00  INFO 31296 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@749d7c01
+2025-08-28T13:48:55.041-03:00  INFO 31296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-28T13:48:55.160-03:00  INFO 31296 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-28T13:48:56.389-03:00  INFO 31296 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T13:48:56.513-03:00  INFO 31296 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T13:48:57.041-03:00  INFO 31296 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-28T13:48:57.596-03:00  WARN 31296 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tarefaController' defined in file [C:\Users\KaylaineSantos\projetos\todolist\todolist\target\classes\com\meuprojeto\todolist\controller\TarefaController.class]: Failed to instantiate [com.meuprojeto.todolist.controller.TarefaController]: Constructor threw exception
+2025-08-28T13:48:57.599-03:00  INFO 31296 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T13:48:57.604-03:00  INFO 31296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-28T13:48:57.625-03:00  INFO 31296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-28T13:48:57.627-03:00  INFO 31296 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-28T13:48:57.659-03:00  INFO 31296 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-28T13:48:57.725-03:00 ERROR 31296 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tarefaController' defined in file [C:\Users\KaylaineSantos\projetos\todolist\todolist\target\classes\com\meuprojeto\todolist\controller\TarefaController.class]: Failed to instantiate [com.meuprojeto.todolist.controller.TarefaController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1357) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.4.jar:3.5.4]
+	at com.meuprojeto.todolist.TodolistApplication.main(TodolistApplication.java:9) ~[classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.meuprojeto.todolist.controller.TarefaController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:123) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351) ~[spring-beans-6.2.9.jar:6.2.9]
+	... 19 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The annotation @Parameter is disallowed for this location
+	The annotation @PathVariable is disallowed for this location
+	Duplicate local variable id
+	Syntax error on token ")", ; expected
+	Duplicate local variable historico
+	Syntax error, insert "}" to complete ClassBody
+
+	at com.meuprojeto.todolist.controller.TarefaController.<init>(TarefaController.java:152) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197) ~[spring-beans-6.2.9.jar:6.2.9]
+	... 21 common frames omitted
+
+2025-08-28T13:57:05.303-03:00  INFO 24360 --- [main] c.m.todolist.TodolistApplicationTests    : Starting TodolistApplicationTests using Java 21.0.8 with PID 24360 (started by KaylaineSantos in C:\Users\KaylaineSantos\projetos\todolist\todolist)
+2025-08-28T13:57:05.306-03:00  INFO 24360 --- [main] c.m.todolist.TodolistApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-08-28T13:57:08.266-03:00  INFO 24360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T13:57:08.586-03:00  INFO 24360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 292 ms. Found 2 JPA repository interfaces.
+2025-08-28T13:57:10.907-03:00  INFO 24360 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T13:57:11.227-03:00  INFO 24360 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-28T13:57:11.328-03:00  INFO 24360 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-28T13:57:12.326-03:00  INFO 24360 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T13:57:12.428-03:00  INFO 24360 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-28T13:57:13.247-03:00  INFO 24360 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c64339f
+2025-08-28T13:57:13.251-03:00  INFO 24360 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-28T13:57:13.484-03:00  INFO 24360 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-28T13:57:16.860-03:00  INFO 24360 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T13:57:17.017-03:00  INFO 24360 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T13:57:18.180-03:00  INFO 24360 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-28T13:57:23.960-03:00  INFO 24360 --- [main] c.m.todolist.TodolistApplicationTests    : Started TodolistApplicationTests in 19.84 seconds (process running for 23.056)
+2025-08-28T13:57:25.166-03:00  INFO 24360 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T13:57:25.169-03:00  INFO 24360 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-28T13:57:25.200-03:00  INFO 24360 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-28T13:57:57.411-03:00  INFO 16880 --- [main] c.m.todolist.TodolistApplication         : Starting TodolistApplication using Java 21.0.8 with PID 16880 (C:\Users\KaylaineSantos\projetos\todolist\todolist\target\classes started by KaylaineSantos in C:\Users\KaylaineSantos\projetos\todolist\todolist)
+2025-08-28T13:57:57.415-03:00  INFO 16880 --- [main] c.m.todolist.TodolistApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-28T13:58:00.338-03:00  INFO 16880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T13:58:00.578-03:00  INFO 16880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 170 ms. Found 2 JPA repository interfaces.
+2025-08-28T13:58:01.624-03:00  INFO 16880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-08-28T13:58:01.717-03:00  INFO 16880 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-28T13:58:01.735-03:00  INFO 16880 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-28T13:58:01.963-03:00  INFO 16880 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-28T13:58:01.964-03:00  INFO 16880 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4348 ms
+2025-08-28T13:58:02.365-03:00  INFO 16880 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T13:58:02.457-03:00  INFO 16880 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-28T13:58:02.515-03:00  INFO 16880 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-28T13:58:03.638-03:00  INFO 16880 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T13:58:03.841-03:00  INFO 16880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-28T13:58:04.395-03:00  INFO 16880 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f7cd50e
+2025-08-28T13:58:04.401-03:00  INFO 16880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-28T13:58:04.664-03:00  INFO 16880 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-28T13:58:06.709-03:00  INFO 16880 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T13:58:06.837-03:00  INFO 16880 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T13:58:07.240-03:00  INFO 16880 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-28T13:58:10.644-03:00  INFO 16880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-08-28T13:58:10.671-03:00  INFO 16880 --- [main] c.m.todolist.TodolistApplication         : Started TodolistApplication in 14.182 seconds (process running for 14.852)
+2025-08-28T13:58:44.104-03:00  INFO 16880 --- [http-nio-8083-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28T13:58:44.104-03:00  INFO 16880 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-28T13:58:44.123-03:00  INFO 16880 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2025-08-28T14:02:59.830-03:00  INFO 24828 --- [main] c.m.todolist.TodolistApplication         : Starting TodolistApplication using Java 21.0.8 with PID 24828 (C:\Users\KaylaineSantos\projetos\todolist\todolist\target\classes started by KaylaineSantos in C:\Users\KaylaineSantos\projetos\todolist\todolist)
+2025-08-28T14:02:59.852-03:00  INFO 24828 --- [main] c.m.todolist.TodolistApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-28T14:03:01.308-03:00  INFO 24828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T14:03:01.413-03:00  INFO 24828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 2 JPA repository interfaces.
+2025-08-28T14:03:02.340-03:00  INFO 24828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-08-28T14:03:02.372-03:00  INFO 24828 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-28T14:03:02.372-03:00  INFO 24828 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-28T14:03:02.499-03:00  INFO 24828 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-28T14:03:02.499-03:00  INFO 24828 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2564 ms
+2025-08-28T14:03:02.785-03:00  INFO 24828 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T14:03:02.905-03:00  INFO 24828 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-28T14:03:02.964-03:00  INFO 24828 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-28T14:03:03.398-03:00  INFO 24828 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T14:03:03.447-03:00  INFO 24828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-28T14:03:03.700-03:00  INFO 24828 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@749d7c01
+2025-08-28T14:03:03.710-03:00  INFO 24828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-28T14:03:03.836-03:00  INFO 24828 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-28T14:03:05.430-03:00  INFO 24828 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T14:03:05.554-03:00  INFO 24828 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T14:03:05.914-03:00  INFO 24828 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-28T14:03:07.384-03:00  WARN 24828 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-08-28T14:03:07.384-03:00  INFO 24828 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T14:03:07.387-03:00  INFO 24828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-28T14:03:07.395-03:00  INFO 24828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-28T14:03:07.419-03:00  INFO 24828 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-28T14:03:07.455-03:00 ERROR 24828 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8083 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8083 or configure this application to listen on another port.
+
+2025-08-28T14:05:36.305-03:00  INFO 3516 --- [main] c.m.todolist.TodolistApplication         : Starting TodolistApplication using Java 21.0.8 with PID 3516 (C:\Users\KaylaineSantos\projetos\todolist\todolist\target\classes started by KaylaineSantos in C:\Users\KaylaineSantos\projetos\todolist\todolist)
+2025-08-28T14:05:36.305-03:00  INFO 3516 --- [main] c.m.todolist.TodolistApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-28T14:05:37.448-03:00  INFO 3516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T14:05:37.543-03:00  INFO 3516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 2 JPA repository interfaces.
+2025-08-28T14:05:38.175-03:00  INFO 3516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-08-28T14:05:38.195-03:00  INFO 3516 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-28T14:05:38.196-03:00  INFO 3516 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-28T14:05:38.267-03:00  INFO 3516 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-28T14:05:38.267-03:00  INFO 3516 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1887 ms
+2025-08-28T14:05:38.456-03:00  INFO 3516 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T14:05:38.519-03:00  INFO 3516 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-28T14:05:38.551-03:00  INFO 3516 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-28T14:05:38.853-03:00  INFO 3516 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T14:05:38.903-03:00  INFO 3516 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-28T14:05:39.143-03:00  INFO 3516 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@16a09809
+2025-08-28T14:05:39.143-03:00  INFO 3516 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-28T14:05:39.229-03:00  INFO 3516 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-28T14:05:40.401-03:00  INFO 3516 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T14:05:40.528-03:00  INFO 3516 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T14:05:40.802-03:00  INFO 3516 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-28T14:05:42.017-03:00  INFO 3516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-08-28T14:05:42.017-03:00  INFO 3516 --- [main] c.m.todolist.TodolistApplication         : Started TodolistApplication in 6.37 seconds (process running for 6.896)
+2025-08-28T15:36:02.552-03:00  INFO 3516 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28T15:36:02.558-03:00  INFO 3516 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-28T15:36:02.580-03:00  INFO 3516 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2025-08-28T15:52:20.185-03:00  INFO 3516 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-28T15:52:20.218-03:00  INFO 3516 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-28T15:52:20.231-03:00  INFO 3516 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T15:52:20.244-03:00  INFO 3516 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-28T15:52:20.252-03:00  INFO 3516 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

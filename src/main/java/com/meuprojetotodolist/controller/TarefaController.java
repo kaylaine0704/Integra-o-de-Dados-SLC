@@ -1,10 +1,9 @@
-package com.meuprojeto.todolist.controller;
+package com.meuprojetotodolist.controller;
 
 import com.meuprojeto.todolist.dto.StatusRequest;
 import com.meuprojeto.todolist.entity.HistoricoTarefa;
 import com.meuprojeto.todolist.entity.Tarefa;
 import com.meuprojeto.todolist.enums.Status;
-import com.meuprojeto.todolist.repository.TarefaRepository;
 import com.meuprojeto.todolist.service.HistoricoTarefaService;
 import com.meuprojeto.todolist.service.TarefaService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -24,11 +23,8 @@ import java.util.List;
 @Tag(name = "Tarefas", description = "API para gerenciamento de tarefas")
 public class TarefaController {
 
-@Autowired
-private TarefaService tarefaService;
-
-@Autowired
-private TarefaRepository tarefaRepository;
+    @Autowired
+    private TarefaService tarefaService;
 
     @Autowired
     private HistoricoTarefaService historicoTarefaService;
@@ -141,21 +137,8 @@ private TarefaRepository tarefaRepository;
     })
     @GetMapping("/{id}/history")
     public ResponseEntity<List<HistoricoTarefa>> buscarHistoricoTarefa(
-        @Parameter(description = "ID da tarefa", example = "1") @PathVariable Long id) {
-        // Verifica se a tarefa existe
-        if (!tarefaRepository.existsById(id)) {
-            return ResponseEntity.notFound().build();
-        }
-        
+            @Parameter(description = "ID da tarefa", example = "1") @PathVariable Long id) {
         List<HistoricoTarefa> historico = historicoTarefaService.listarPorTarefa(id);
-        
-        // Add logging to check the retrieved history
-        if (historico.isEmpty()) {
-            System.out.println("No history found for task ID: " + id);
-        } else {
-            System.out.println("History found for task ID: " + id + ", count: " + historico.size());
-        }
-        
         return ResponseEntity.ok(historico);
     }
 }

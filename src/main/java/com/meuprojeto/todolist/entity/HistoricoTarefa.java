@@ -1,8 +1,10 @@
 package com.meuprojeto.todolist.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.meuprojeto.todolist.enums.Status;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 @Entity
 @Table(name = "historico_tarefa")
@@ -12,12 +14,10 @@ public class HistoricoTarefa {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+@ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "tarefa_id", nullable = false)
+    @JsonIgnore
     private Tarefa tarefa;
-
-    @Column(name = "tarefa_id", insertable = false, updatable = false)
-    private Long tarefaId;
 
     @Enumerated(EnumType.STRING)
     private Status statusAnterior;
@@ -61,17 +61,6 @@ public class HistoricoTarefa {
 
     public void setTarefa(Tarefa tarefa) {
         this.tarefa = tarefa;
-        if (tarefa != null) {
-            this.tarefaId = tarefa.getId();
-        }
-    }
-
-    public Long getTarefaId() {
-        return tarefaId;
-    }
-
-    public void setTarefaId(Long tarefaId) {
-        this.tarefaId = tarefaId;
     }
 
     public Status getStatusAnterior() {
@@ -104,5 +93,18 @@ public class HistoricoTarefa {
 
     public void setDataAlteracao(LocalDateTime dataAlteracao) {
         this.dataAlteracao = dataAlteracao;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof HistoricoTarefa)) return false;
+        HistoricoTarefa that = (HistoricoTarefa) o;
+        return id != null && id.equals(that.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(id);
     }
 }

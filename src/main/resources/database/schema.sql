@@ -11,9 +11,10 @@ CREATE TABLE tarefa (
 
 CREATE TABLE historico_tarefa (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    id_tarefa BIGINT NOT NULL,
+    tarefa_id BIGINT NOT NULL,
     status_anterior VARCHAR(20) NOT NULL,
     novo_status VARCHAR(20) NOT NULL,
-    data_ocorrencia DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (id_tarefa) REFERENCES tarefa(id)
+    acao VARCHAR(100),
+    data_alteracao DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (tarefa_id) REFERENCES tarefa(id)
 );

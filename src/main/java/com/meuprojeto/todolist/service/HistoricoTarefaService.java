@@ -1,6 +1,6 @@
 package com.meuprojeto.todolist.service;
 
-import com.meuprojeto.todolist.model.HistoricoTarefa;
+import com.meuprojeto.todolist.entity.HistoricoTarefa;
 import com.meuprojeto.todolist.repository.HistoricoTarefaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,6 +13,6 @@ public class HistoricoTarefaService {
     private HistoricoTarefaRepository historicoTarefaRepository;
 
     public List<HistoricoTarefa> listarPorTarefa(Long idTarefa) {
-        return historicoTarefaRepository.findByTarefaIdOrderByDataOcorrenciaDesc(idTarefa);
+        return historicoTarefaRepository.findByTarefaIdOrderByDataAlteracaoDesc(idTarefa);
     }
 }
